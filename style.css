@@ -4,14 +4,43 @@ body {
 nav.navbar{
     background-color: #264653;
 }
-.row div{
-    position: relative;
-    top: 50%;
-    margin: 10px;
+
+
+.column {
+    position: absolute;
+    top: 25%;
     color: #f4a261;
     align-items: center;
     text-align: center;
+    float: left;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    font-size: 35px;
+    align-self: center;
 }
+
+.assine {
+    position: inherit;
+    left: 100%;
+    bottom: 50%;
+    font-size: 50px;
+    top: 50%;
+    background-color: #e9c46a;
+    color: #e76f51;
+    height: 200px;
+    width: 400px;
+    border-radius: 20px;
+    
+    text-align: center;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .row2 div{
     position: absolute;
     font-size: 300%;
